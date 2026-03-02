@@ -72,3 +72,8 @@ let request = "odd";
 let num = 5;
 let check = evenOrOdd();    
 check();
+
+request = "odd";
+num = 10;
+check = evenOrOdd();    
+check();
