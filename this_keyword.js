@@ -25,3 +25,10 @@ const info = {
 
 info.getavg(); // Output: Delta has an average mark of 92.5.
 info.inf(); // Output: Delta is 20 years old.
+
+// In a regular function, 'this' refers to the global object (window in browsers) or is undefined in strict mode. 
+function test(){
+    console.log(this);
+}
+
+test();
