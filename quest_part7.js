@@ -37,4 +37,14 @@ const chkeven1 = (numb) =>{ return (numb%2 ===0) ? 'even' : 'odd'; };
 let evn1 = chkeven1(5);
 console.log(evn1);
 
-// The remaining questions are text based and don't need code implementation.
+// The remaining questions are text based and don't need code implementation, here it is ,we've to tell just output:
+const object = {
+    message: 'Hello, World!',
+
+    logMessage() {
+        console.log(this.message);
+    }
+};
+
+setTimeout(object.logMessage, 1000);
+
