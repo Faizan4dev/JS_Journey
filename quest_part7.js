@@ -48,3 +48,19 @@ const object = {
 
 setTimeout(object.logMessage, 1000);
 
+// Q4
+let length = 4;
+
+function callback() {
+    console.log(this.length);
+}
+
+const object1 = {
+    length: 5,
+    method(callback) {
+        callback();
+    },
+};
+
+object1.method(callback, 1, 2);
+
