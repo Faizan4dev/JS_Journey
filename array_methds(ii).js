@@ -33,3 +33,11 @@ let users = [
 
 let namm = users.map(user => user.name);
 console.log(namm);
+
+
+// user defined function
+function square(n){
+    return n * n;
+}   
+let squared = nums.map(square);
+console.log(squared);
