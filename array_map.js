@@ -1,16 +1,3 @@
-// .forEach
-let arr = [1,2,3,4,5];
-
-let print = function(el){
-    console.log(el);
-};
-
-arr.forEach(print);
-
-// or 
-arr.forEach(el =>{
-    console.log()
-} );
 
 // Map function : accesses each element and return a new array with the result of the function applied to each element
 let nums = [1,2,3,4];
@@ -41,13 +28,3 @@ function square(n){
 }   
 let squared = nums.map(square);
 console.log(squared);
-
-// filter method : creates a new array with all elements that pass the condition implemented by the provided function
-let numbers = [1,2,3,4,5,6];
-let evenNumbers = numbers.filter(n => n % 2 === 0);
-console.log(evenNumbers);
-
-// for strings
-let words = ["cat","elephant","dog","giraffe"];
-let longWords = words.filter(word => word.length <= 3);
-console.log(longWords);
