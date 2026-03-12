@@ -5,3 +5,8 @@
 let nums = [1,4,5,6,10,20];
 let finalVal = nums.reduce((resl,el) => resl + el);
 console.log(finalVal);
+
+// product
+
+let prodVal = nums.reduce((resl,el) => resl * el);
+console.log(prodVal);
