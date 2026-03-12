@@ -35,3 +35,15 @@ console.log(max);
 
 let  min = nums.reduce((mini,el) => mini < el ? mini : el);
 console.log(min);
+
+// or
+let minVal = nums.reduce((mini,el) => {
+    if(mini < el){
+        return mini;    
+    }
+    else if(mini > el){
+        return el;
+    }
+})
+
+console.log(minVal);
