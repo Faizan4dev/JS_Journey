@@ -18,3 +18,15 @@ console.log(maxVal);
 // This part: resl > el ? resl : el
 // is a ternary operator.
 // Structure: condition ? value_if_true : value_if_false
+
+// or in another way
+let max = nums.reduce((resl,el) => {
+    if(resl > el){
+        return resl;}
+    else if(resl<el){
+        return el;
+    }
+}
+)
+
+console.log(max);
