@@ -10,3 +10,11 @@ console.log(finalVal);
 
 let prodVal = nums.reduce((resl,el) => resl * el);
 console.log(prodVal);
+
+// max value
+let maxVal = nums.reduce((resl,el) => resl > el ? resl : el);
+console.log(maxVal);
+
+// This part: resl > el ? resl : el
+// is a ternary operator.
+// Structure: condition ? value_if_true : value_if_false
