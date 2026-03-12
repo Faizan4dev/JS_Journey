@@ -13,3 +13,9 @@ console.log(somechk);
 
 let somechk2 = nums.some(num => num%2 == 1);
 console.log(somechk2);
+
+// Q : to check all numbers are  multiple of 10
+
+let numbs = [10,20,41,50];
+let numchk = numbs.every(ele => ele%10 === 0);
+console.log(numchk);

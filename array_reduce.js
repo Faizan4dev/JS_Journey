@@ -30,3 +30,8 @@ let max = nums.reduce((resl,el) => {
 )
 
 console.log(max);
+
+// Q : to find min number
+
+let  min = nums.reduce((mini,el) => mini < el ? mini : el);
+console.log(min);
