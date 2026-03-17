@@ -54,9 +54,9 @@ let obj = {
     city : "New York"
 };
 let obj1 = {
-    name : "Bob",
-    country : "USA"
+    sname : "Bob",
+    scountry : "USA"
 };
 
-let final = (obj,obj1);
+let final = mergeObjects(obj,obj1);
 console.log(final);
