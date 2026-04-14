@@ -40,3 +40,17 @@ function sumAll(...numbers) {
 }
 let arr = [1, 2, 3, 3];
 console.log(sumAll(...arr));
+
+// destructuring
+// let names = ["ali", "Amal", "Saher"];
+let [lname, , fname] = names;
+console.log(fname, lname);
+
+let obj = {
+  name: "Ali",
+  age: 25,
+  city: "Karachi",
+};
+
+let { name: username, city: residence } = obj;
+console.log(username, residence);
