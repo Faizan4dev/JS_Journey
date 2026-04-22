@@ -24,19 +24,19 @@ for (let i = 0; i < byClass.length; i++) {
 // (3) document.getElementsByTagName
 console.log("============================");
 console.log("Selection by tag name");
-let byTag = document.getElementsByTagName("a");
+// let byTag = document.getElementsByTagName("a");
 
-for (let i = 0; i < byTag.length; i++) {
-  console.dir(byTag[i].outerText);
-  console.dir(byTag[i].outerHTML);
-}
+// for (let i = 0; i < byTag.length; i++) {
+//   console.dir(byTag[i].outerText);
+//   console.dir(byTag[i].outerHTML);
+// }
 
-let byTag2 = document.getElementsByTagName("p");
-console.dir(byTag2[0].outerText);
+// let byTag2 = document.getElementsByTagName("p");
+// console.dir(byTag2[0].outerText);
 
-console.dir(
-  (byTag2[0].outerText = "This is the new text for the first paragraph."),
-);
+// console.dir(
+//   (byTag2[0].outerText = "This is the new text for the first paragraph."),
+// );
 
 // (4) document.querySelector
 console.dir("============================");
@@ -66,12 +66,11 @@ console.dir(div.innerHTML);
 div.innerHTML =
   "<h2>New Heading by innerHTML</h2><p>New paragraph inside the box.</p>";
 
-// (3) element.textContent
+// (3) element.textContent --shows hidden text as well
 console.log("============================");
 console.log("Manipulation using textContent");
-// let span = document.querySelector("span");
-// console.dir(span.textContent);
-// span.textContent = "This is the new text for the span element.";
+let span = document.querySelector("#description");
+console.dir(span.textContent);
 
 // (4) element.style
 console.log("============================");
@@ -80,3 +79,17 @@ let box = document.querySelector(".box");
 console.dir(box.style);
 box.style.backgroundColor = "blue";
 box.style.color = "white";
+
+// (5) get and set attributes
+console.log("============================");
+console.log("Manipulation using attributes");
+let link = document.querySelector("#mainImg");
+console.dir(link.getAttribute("id"));
+link.setAttribute("src", "creation_3.png"); //replace the image source with new one(3rd image)
+
+// (6) element.classList
+console.log("============================");
+console.log("Manipulation using classList");
+let element = document.querySelector("#description");
+console.dir(element.classList);
+element.classList.add("yellow"); //add a new class to the element

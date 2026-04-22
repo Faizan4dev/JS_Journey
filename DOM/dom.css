@@ -27,3 +27,8 @@ body {
     background-color: antiquewhite;
 }
 
+
+.yellow {
+    background-color: yellow;
+    text-decoration-line: wavy underline;
+}
