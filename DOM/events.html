@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Events</title>
+    <link rel="stylesheet" href="events.css">
+</head>
+<body>
+    <!-- Inline Event Handlers -->
+    <button onclick="console.log('Button pressed')">Click Me</button>
+    <button onclick="console.log('Button pressed'); console.log('Another log message')">
+        Dual Log Button
+    </button>
+    <br>
+    <!-- on* Event Handlers -->
+      <button id="myBtn">Button</button> 
+        <!-- onclick -->
+      <!-- multiple buttons -->
+       <p>Multiple Buttons with same Output-- <b>Click the like buttons:</b></p>
+       <button class="liked">Like &#10084;</button>
+       <button class="liked">Like &#10084;</button>
+       <button class="liked">Like &#10084;</button>
+       <!-- on mouseenter -->
+        <div id="redZone"><p>Red zone ! don't hover over me!</p></div>
+        
+    
+    <!-- Event Listeners -->
+   
+
+    <script src="events.js"></script>
+</body>
+</html>
