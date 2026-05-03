@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2{
+    text-align: center;
+    margin: 10px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(2, 120px);
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.btn{
+    height: 100px;
+    width: 100px;
+    border-radius: 20%;
+    border: 3px solid black;
+    cursor: pointer;
+}
+
+.yellow{
+    background-color: yellow;
+}
+
+.green{
+    background-color: green;
+}
+
+.purple{
+    background-color: #d95980;
+}
+
+.red{
+    background-color: red;
+}
+
+/* flash effect */
+.gameFlash{
+    background-color: white !important;
+}
+
+/* user click effect */
+.userFlash{
+    background-color: black !important;
+}
