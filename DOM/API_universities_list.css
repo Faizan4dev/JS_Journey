@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@0;1&family=IBM+Plex+Sans:wght@400;500&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #c5cccd;
+  color: #1a1a1a;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  padding: 3rem 1.5rem;
+  max-width: 580px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: 'Lora', serif;
+  font-weight: 400;
+  font-size: 1.75rem;
+  color: #1a1a1a;
+  margin-bottom: 0.25rem;
+  letter-spacing: -0.01em;
+}
+
+.search-bar {
+  display: flex;
+  gap: 8px;
+  margin: 1.75rem 0 2rem;
+}
+
+#countryInput {
+  flex: 1;
+  background: #fff;
+  border: 1px solid #c8c3b8;
+  border-radius: 4px;
+  color: #1a1a1a;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 0.9rem;
+  padding: 0.6rem 0.85rem;
+  outline: none;
+  transition: border-color 0.15s;
+}
+
+#countryInput::placeholder {
+  color: #a09a90;
+}
+
+#countryInput:focus {
+  border-color: #7a7060;
+}
+
+#fetchButton {
+  background: #1a1a1a;
+  border: 1px solid #1a1a1a;
+  border-radius: 4px;
+  color: #f5f2eb;
+  cursor: pointer;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 500;
+  padding: 0.6rem 1.2rem;
+  transition: background 0.15s;
+}
+
+#fetchButton:hover {
+  background: #333;
+  border-color: #333;
+}
+
+#fetchButton:active {
+  background: #000;
+}
+
+#uniList {
+  list-style: none;
+  border-top: 1px solid #c8c3b8;
+}
+
+#uniList li {
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #e0dbd2;
+  font-size: 0.9rem;
+  color: #2a2a2a;
+}
+
+#uniList li:last-child {
+  border-bottom: 1px solid #c8c3b8;
+}
